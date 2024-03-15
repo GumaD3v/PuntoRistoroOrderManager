@@ -1,0 +1,5 @@
+{
+    "watch": ["src", "webpage-ts"],
+    "ext": "ts",
+    "exec": "tsc --project ./webpage-ts/tsconfig.json && ts-node ./src/app.ts"
+  }

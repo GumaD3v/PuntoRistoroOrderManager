@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Punto Ristoro</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--script src="/javascripts/orderList.js"></script-->
+    <script type='module' src="/typescript/index.js"></script>
+  </head>
+  <body>
+    <h1> Punto Ristoro - Gestore Ordinazioni </h1>
+    <button class="create-order-btn">Crea nuova</button>
+    <button class="filter-btn">Filtri</button>
+    <input type="checkbox"> Includi completati </input>
+    <h3> Ordinazioni attuali: </h3>
+    <div id="ordinazioni" class="div-ordinazioni">
+    </div>
+    <div class="order-screen-bg" id="order-screen-bg" hidden="true"></div>
+    <div class="order-screen" id="order-screen" hidden="true">
+      <div>
+        <h1> Aggiungi Ordine </h1>
+        <div id="menu" class="menu"></div>
+      </div>
+      <div class="order-screen-separator"></div>
+      <div>
+        <h2> Riepilogo ordine </h2>
+        <div id="cart" class="cart"></div>
+        <div style="display: flex; flex-direction: row; align-items: center;">
+          <h3 class="totAmount" id="totAmount"></h3>
+          <button class="send-order" id="send-order"> Send </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

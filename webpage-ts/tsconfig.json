@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "ES6",
+        "lib": ["ES2022", "dom"],
+        "outDir": "../public/typescript",
+        "strict": true,
+        "composite": true,
+        "types": ["jquery"]
+    },
+    "include": [
+        "./**/*"
+    ],
+    
+}

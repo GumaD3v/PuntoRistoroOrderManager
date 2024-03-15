@@ -1,0 +1,187 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+button {
+  padding: 6px;
+  border-radius: 15px;
+  border-style: solid;
+}
+
+
+.create-order-btn {
+  border-color: rgb(67, 104, 80); 
+  background-color: rgb(32, 90, 70); 
+  color: white;
+}
+
+.create-order-btn:hover {
+  background-color: rgb(173, 188, 159);
+}
+
+.filter-btn {
+  border-color: rgb(56, 65, 157); 
+  background-color: rgb(63, 19, 124); 
+  color: white;
+}
+
+.filter-btn:hover {
+  background-color: rgb(87, 88, 121);
+}
+
+.ordinazione {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 3px;
+  padding-left: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.ordinazione[espanso=false] {
+  height: 50px;
+}
+
+.ordinazione[espanso=true] {
+  height: auto;
+}
+
+.ordinazione * {
+  pointer-events: none;
+}
+
+.order-state {
+  text-align: right;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  margin: 10px;
+  padding: 5px;
+  border-style: dashed;
+  border-radius: 5px;
+  color: white;
+}
+
+.order-state[fatto=false] {
+  background-color: red;
+  border-color: darkred;
+}
+
+.div-ordinazioni {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.order-screen {
+  display: flex;
+  flex-direction: row;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: silver;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.order-screen * {
+  text-align: center;
+}
+
+.order-screen[hidden="true"] {
+  visibility: hidden;
+}
+
+.order-screen > * {
+  width: 100%;
+}
+
+.order-screen-bg {
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.order-screen-separator {
+  border-left: 2px dotted black;
+  width: min-content;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(4, 80px);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.menu * {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu-item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item > * {
+  pointer-events: none;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 25px;
+}
+
+/* Order element */
+.cart > div {
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Text in order element */
+.cart > div > h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.totAmount {
+  width: 100%;
+}
+
+.send {
+  margin: 30px;
+  padding: 20px;
+}
